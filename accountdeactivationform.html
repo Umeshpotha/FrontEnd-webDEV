@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deactivation:accounts Signed In</title>
+    <style>
+      body {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 375px;
+        margin-right: 375px;
+        padding-bottom: 30px;
+        /* padding-left: 20px; */
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        width: 500px;
+      }
+      .heading h1 {
+        padding: 10px;
+        border-bottom: 2px solid black;
+      }
+      input,
+      textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 500px;
+      }
+
+      label {
+        margin: 5px;
+        padding: px;
+        font-weight: bold;
+      }
+      form {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .cansub {
+        justify-content: space-between;
+        align-content: end;
+        display: flex;
+        flex-direction: row;
+      }
+      .cansub input[type="submit"] {
+        margin: 5px;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: red;
+      }
+      .cansub input[type="reset"] {
+        margin: 5px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .cansub input[type="submit"]:hover {
+        background-color: rgb(210, 151, 151);
+      }
+      .cansub input[type="reset"]:hover {
+        background-color: rgb(185, 179, 179);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Account Deactivation</h1>
+
+      <form action="#">
+        <label for="pass">Confirm Your Password</label>
+        <input type="password" id="pass" name="pass" />
+        <label for="feed">Do you have any feedback</label>
+        <textarea name="feed" id="feed" rows="10"></textarea>
+        <p style="text-align: left">
+          we're sorry to see you go. if you everwish to activate your account ,
+          please contact<a
+            href="mailto:demo123@gmail.com"
+            style="text-decoration: none"
+            >support123@gmail.com</a
+          >with your username.
+        </p>
+        <div class="cansub">
+          <input type="reset" value="Cancel" />
+          <input type="submit" value="Deactivate" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

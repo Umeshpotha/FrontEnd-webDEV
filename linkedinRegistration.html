@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn - Registration</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        /* border: 5px solid red; */
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+      #logo {
+        width: 40px;
+        height:35 px;
+        padding: 0;
+      }
+      .reg-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .form-contain {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin: 5px;
+        background-color: white;
+        color: black;
+        width: 300px;
+        border-radius: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+      }
+      label {
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 200;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: solid blue;
+      }
+      button {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darkblue;
+      }
+      p {
+        font-size: 12px;
+      }
+      a {
+        color: blue;
+      }
+      .cont-with-google {
+        font-weight: 800;
+        color: black;
+        border: 1px solid #ccc;
+        padding: 3px;
+        border-radius: 15px;
+        cursor:pointer;
+        justify-content: space-between;
+      }
+      .cont-with-google img {
+        height: 23px;
+        width: auto;
+        
+      }
+      .cont-with-google a {
+        display: inline-flex;
+         align-items: center;
+         text-decoration: none;
+         color: black;
+      }
+      .cont-with-google:hover {
+        outline: solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Linked</h1>
+      <img src="icons8-linkedin.svg" alt="logo" id="logo" />
+    </div>
+    <div class="reg-form">
+      <h1>Make the most of your professional life</h1>
+      <div class="form-contain">
+        <form action="submit.html">
+          <label for="email_or_phone">Email or Phone number</label>
+          <input type="text" id="email_or_phone" name="email_or_phone" />
+          <label for="password">Password (6+Characters)</label>
+          <input type="password" id="password" name="password" />
+          <p>
+            By clicking Agree & Join or Continue, you agree to the
+            <a href="#" target="_blank">LinkedIn User Agreement</a>,
+            <a href="#" target="_blank">Privacy Policy</a>, and
+            <a href="#" target="_blank">Cookie Policy</a>.
+          </p>
+          <button type="submit" id="submit-button">Agree & Join</button>
+        </form>
+        <hr />
+        <p style="font-weight: 800; font-size: smaller">or</p>
+        <div class="cont-with-google">
+             <a href="#">  <img src="icons8-google.svg" alt=""> <span>&nbsp; Continue with Google</span></a>
+        </div> 
+    </div>
+  </body>
+  <script>
+
+  </script>
+</html>

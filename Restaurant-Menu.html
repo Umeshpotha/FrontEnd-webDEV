@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        color: blueviolet;
+      }
+      h2 {
+        color: cadetblue;
+        text-align: center;
+      }
+      li {
+        font-size: larger;
+      }
+      .outer {
+        display: flex;
+        justify-content: space-around;
+      }
+      .inner {
+        padding: 5px;
+        margin: 5px;
+      }
+      .special {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media only screen and (max-width: 720px) {
+        body {
+          background-color: lightblue;
+        }
+        .outer {
+          display: inline;
+        }
+        .inner {
+          padding: 0px;
+          margin: 0px;
+        }
+        h2 {
+        }
+        .special {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Restaurant Menu</h1>
+    <div class="outer">
+      <div class="inner">
+        <h2>Break Fast</h2>
+        <ol>
+          <li>Idli with Sambar and Chutney - ₹50</li>
+          <li>Mysore Masala Dosa - ₹90</li>
+          <li>Appam with Stew - ₹100</li>
+          <li>Pesarattu - ₹80</li>
+          <li>Poori with Sagu - ₹70</li>
+          <li>Rava Idli - ₹60</li>
+          <li>Pongal - ₹70</li>
+          <li>Puttu with Kadala Curry - ₹90</li>
+          <li>Neer Dosa - ₹80</li>
+        </ol>
+      </div>
+      <div class="inner">
+        <h2>Lunch</h2>
+        <ol>
+          <li>Biryani (Hyderabadi Style) - ₹200</li>
+          <li>Sambar Rice - ₹100</li>
+          <li>Kerala Sadhya (Banana Leaf Meal) - ₹250</li>
+          <li>Andhra Chicken Curry - ₹180</li>
+          <li>Lemon Rice - ₹90</li>
+          <li>Jolada Rotti with Ennegai - ₹120</li>
+          <li>Gongura Mutton - ₹220</li>
+          <li>Bagara Baingan - ₹140</li>
+          <li>Tamarind Rice - ₹90</li>
+          <li>Gutti Vankaya - ₹150</li>
+        </ol>
+      </div>
+      <div class="inner">
+        <h2>Snacks</h2>
+        <ol>
+          <li>Murukku - ₹50</li>
+          <li>Maddur Vada - ₹60</li>
+          <li>Banana Chips - ₹40</li>
+          <li>Punugulu - ₹60</li>
+          <li>Paniyaram - ₹70</li>
+          <li>Sakinalu - ₹50</li>
+          <li>Banana Fritters - ₹50</li>
+          <li>Garelu - ₹6</li>
+        </ol>
+      </div>
+      <div class="inner">
+        <h2>Dinner</h2>
+        <ol>
+          <li>Masala Dosa - ₹90</li>
+          <li>Chettinad Chicken Curry - ₹180</li>
+          <li>Fish Molee - ₹220</li>
+          <li>Kori Rotti - ₹200</li>
+          <li>Hyderabadi Dum Biryani - ₹250</li>
+          <li>Vegetable Kurma with Parotta - ₹150</li>
+          <li>Prawn Moilee - ₹240</li>
+          <li>Mutton Sukka - ₹230</li>
+          <li>Tomato Pappu - ₹120</li>
+          <li>Curd Rice - ₹80</li>
+        </ol>
+      </div>
+    </div>
+    <h2 style="">Our Specials</h2>
+    <div class="special" style="">
+      <ol>
+        <li>Payasam - ₹70</li>
+        <li>Mysore Pak - ₹80</li>
+        <li>Bobbatlu - ₹90</li>
+        <li>Ada Pradhaman - ₹100</li>
+        <li>Qubani ka Meetha - ₹100</li>
+        <li>Kesari - ₹60</li>
+        <li>Pootharekulu - ₹90</li>
+        <li>Double Ka Meetha - ₹90</li>
+      </ol>
+    </div>
+  </body>
+</html>

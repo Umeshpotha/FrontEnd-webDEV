@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOB Application</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .heading {
+        justify-content: center;
+        background-color: rgb(247, 247, 247);
+      }
+      .heading h1 {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+      }
+      .form {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aliceblue; */
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        margin: 15px;
+        padding: 15px;
+        background-color: rgb(217, 236, 236);
+        width: 37rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      select {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        /* width: max-content; */
+      }
+      label {
+        margin: 5px;
+        padding: 5px;
+        font-weight: bold;
+      }
+      .name {
+        justify-content: around;
+      }
+      .name label {
+        margin: 10px;
+        padding: 5px;
+        font-weight: bold;
+      }
+      .check {
+        display: flex;
+      }
+      textarea {
+        border-radius: 11px;
+      }
+      button {
+        border-radius: 11px;
+        margin: 3px;
+        padding: 3px;
+      }
+
+      #submit {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: large;
+      }
+      .head {
+        display: flex;
+        font-weight: 800;
+        padding: 2px;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Job Application</h1>
+    </div>
+    <div class="form">
+      <div class="head">
+        <img
+          src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/external-opportunity-business-and-finance-tanah-basah-glyph-tanah-basah.png"
+          alt="external-opportunity-business-and-finance-tanah-basah-glyph-tanah-basah"
+        />
+        <h1 style="margin-left: 10px">Fill Out Your Application</h1>
+      </div>
+
+      <form action="">
+        <div class="name">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" />
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <label for="emailid">Email Id</label>
+        <input type="email" name="emailid" id="emailid" required />
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" />
+        <label for="education">Education</label>
+        <select name="education" id="education">
+          <option value="Select your Education">Select your Education</option>
+          <option value="10">10 Th class</option>
+          <option value="12">12 Th class</option>
+          <option value="UG">Under Graduate</option>
+          <option value="Graduate">Graduate</option>
+          <option value="PG">Post Graduate</option>
+        </select>
+
+        <p style="font-weight: 900">Select your role</p>
+        <div class="check">
+          <input type="checkbox" name="skill1" id="skill1" />
+          <label for="skill1">Web Developer</label>
+          <input type="checkbox" name="skill2" id="skill2" />
+          <label for="skill2">App developer</label>
+          <input type="checkbox" name="skill3" id="skill3" />
+          <label for="skill3">Data Scientist</label>
+          <input type="checkbox" name="skill4" id="skill4" />
+          <label for="skill4"> ML Engineer</label>
+        </div>
+        <label for="cover_letter">Cover Letter</label>
+        <textarea name="cover_letter" id="cover_letter" rows="10"></textarea>
+        <label for="resume">Resume</label>
+        <input type="file" name="resume" id="resume" accept=".pdf" />
+
+        <input type="submit" value="Submit Application" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
