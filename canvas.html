@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw a House</title>
+</head>
+<body>
+    <canvas id="houseCanvas" width="400" height="400" ></canvas>
+
+    <script>
+        var canvas = document.getElementById('houseCanvas');
+        var ctx = canvas.getContext('2d');
+        
+        
+        ctx.fillStyle = '#8B4513'; 
+        ctx.fillRect(50, 75, 100, 100);
+        ctx.fillRect(100, 150, 200, 200);    
+
+
+        ctx.fillRect(200, 250, 300, 300); 
+        ctx.fillRect(700, 350, 500, 500); 
+    </script>
+</body>
+</html>
