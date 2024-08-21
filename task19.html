@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Umesh Potha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            border-radius: 11px;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            list-style: none;
+            margin-left: 15px;
+        }
+
+        nav li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 11px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav li:hover {
+            background-color: grey;
+            border-radius: 11px;
+        }
+
+        nav li a:hover {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 11px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-media a {
+            margin-left: 15px;
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: grey;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 100px;
+        }
+
+        .left-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-section img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .right-section {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .welcome h1 {
+            font-size: 36px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: fit-content;
+            border-right: 3px solid black; 
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            40% {
+                width: 100%;
+            }
+
+            60% {
+                width: 100%;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+        @keyframes erase {
+            from {
+                width: 100%;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+        .about-section,
+        .education-section,
+        .certifications-section {
+            padding: 20px;
+            max-width: 80%;
+            margin: 40px auto;
+            text-align: left;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .about-section h2,
+        .education-section h2,
+        .certifications-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p,
+        .education-section p,
+        .certifications-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .education-section ul,
+        .certifications-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .education-section ul li,
+        .certifications-section ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Umesh Potha</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/umesh-potha-8b93bb254/" target="_blank">
+                <i class="fab fa-linkedin" style="color:blue"></i>
+            </a>
+            <a href="https://github.com/Umeshpotha" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/Umeshdsit" target="_blank">
+                <i class="fab fa-twitter" style="color:blue;"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="left-section">
+            <img src="https://via.placeholder.com/300x400" alt="Umesh Potha">
+        </div>
+        <div class="right-section">
+            <div class="welcome">
+                <h1 id="typewriter"></h1>
+            </div>
+        </div>
+    </main>
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I'm Umesh, a passionate tech enthusiast with a strong foundation in data science and web development. Equipped with a solid understanding of Python programming, I'm dedicated to harnessing my skills to create innovative and impactful solutions.</p>
+        <p>My expertise includes:</p>
+        <ul>
+            <li>Data Science: Python, data visualization, statistical analysis, and data manipulation</li>
+            <li>Web Development: Full-stack development (HTML, CSS, JavaScript, and backend frameworks)</li>
+            <li>GUI Development: Creating user-friendly applications using Python</li>
+        </ul>
+        <p>I'm always eager to explore new technologies and collaborate on exciting projects. Let's connect and work together to bring your data-driven ideas to life!</p>
+    </section>
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>MOHAN BABU UNIVERSITY</strong><br>
+                CSE (Data Science), Computer Science<br>
+                Oct 2022 - Aug 2026<br>
+                Grade: 9<br>
+                Activities and societies: Python programmer<br>
+                Skills: Database Management System (DBMS), C (Programming Language), Problem Solving
+            </li>
+            <li>
+                <strong>Sri Chaitanya Junior College Tirupati</strong><br>
+                Intermediate<br>
+                Jun 2020 - Mar 2022<br>
+                Grade: 947/1000 marks
+            </li>
+            <li>
+                <strong>Sri Venkateswara Children's High School</strong><br>
+                High School<br>
+                Jun 2011 - Mar 2020<br>
+                Grade: 10 GPA
+            </li>
+        </ul>
+    </section>
+    <section id="certifications" class="certifications-section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>
+                <strong>Google Advanced Data Analytics</strong><br>
+                Coursera<br>
+                Issued Jul 2024<br>
+                Credential ID: FSZF8ENB83SZ<br>
+                Skills: Exploratory Data Analysis, Predictive Analytics
+            </li>
+            <li>
+                <strong>Microsoft Certified: Azure AI Fundamentals</strong><br>
+                Microsoft<br>
+                Issued Jun 2024<br>
+                Credential ID: 25525F8A59A040FF<br>
+                Skills: Artificial Intelligence (AI)
+            </li>
+            <li>
+                <strong>Google Cybersecurity Specialization</strong><br>
+                Google<br>
+                Issued Mar 2024<br>
+                Credential ID: GBSXX9KJWUA2
+            </li>
+            <li>
+                <strong>Probability & Statistics for Machine Learning & Data Science</strong><br>
+                DeepLearning.AI<br>
+                Issued Mar 2024<br>
+                Credential ID: MDZTDSUNA4NG<br>
+                Skills: Machine Learning, NumPy
+            </li>
+            <li>
+                <strong>Python For Data Analysis and Visualization</strong><br>
+                Udemy<br>
+                Issued Feb 2024<br>
+                Credential ID: UC-43374f15-d75f-4cb3-8e22-9a09095bdc10<br>
+                Skills: Data Visualization, Exploratory Data Analysis, Data Analysis
+            </li>
+            <li>
+                <strong>Web UI Testing With Katalon</strong><br>
+                Katalon<br>
+                Issued Jan 2024<br>
+                Credential ID: lp65aeada0210ab
+            </li>
+            <li>
+                <strong>Introduction to Generative AI</strong><br>
+                Google<br>
+                Issued Sep 2023<br>
+                Credential ID: 5086980
+            </li>
+        </ul>
+    </section>
+    <script>
+        const roles = ["Hello! I am Umesh", "I am a Web Developer", "I am an Android Developer"];
+        let index = 0;
+        let currentText = '';
+        let letterIndex = 0;
+        const typingSpeed = 200;
+        const erasingSpeed = 150;
+        const delayBetweenRoles = 2500;
+
+        function type() {
+            if (letterIndex < roles[index].length) {
+                currentText += roles[index].charAt(letterIndex);
+                document.getElementById('typewriter').textContent = currentText;
+                letterIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, delayBetweenRoles);
+            }
+        }
+
+        function erase() {
+            if (letterIndex > 0) {
+                currentText = currentText.substring(0, letterIndex - 1);
+                document.getElementById('typewriter').textContent = currentText;
+                letterIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                index = (index + 1) % roles.length;
+                setTimeout(type, delayBetweenRoles);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(type, delayBetweenRoles);
+        });
+    </script>
+</body>
+
+</html>
