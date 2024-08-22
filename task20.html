@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom-Attributes</title>
+    <style>
+        .Container{
+            margin-top:50px;
+            margin-left:500px;
+            padding:10px;
+            margin-right:500px;
+            border-radius: 15px;
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .Container ul{
+            font-size: 25px;
+            list-style: none;
+            line-height: 50px;
+        }
+        .Container li{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function describe(element){
+            var name=element.getAttribute('data-name');
+            var description=element.getAttribute('data-descr');
+
+            document.getElementById("name1").textContent = name;
+            document.getElementById("description").textContent = description;
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <div class="Container">
+        
+        <h1>Favourite Person</h1>
+        <ul>
+            <li onclick="describe(this)" data-name="Arya Bhatta" data-descr="An ancient Indian mathematician and astronomer, Aryabhata is known for his significant contributions to mathematics and astronomy, particularly for his work on the approximation of pi and the concept of zero." >Aryabhatta</li>
+            <li onclick="describe(this)" data-name="Acharya Nagarujuna" data-descr="Acharya Nagarjuna was an Indian philosopher and founder of the Madhyamaka school of Mahayana Buddhism, known for his teachings on the concept of 'emptiness' (Shunyata) and his works on philosophy and medicine." >Acharya Nagarjuna</li>
+            <li onclick="describe(this)" data-name="Acharya Kanada" data-descr="Acharya Kanada, also known as Rishi Kashyap, was an ancient Indian philosopher and scientist who founded the Vaisheshika school of Hindu philosophy and is credited with developing the atomic theory of matter." >Acharya  Kanada (Rishi Kashyap)</li>
+            <li onclick="describe(this)" data-name="Shusruta" data-descr="Sushruta was an ancient Indian physician and surgeon, often regarded as the 'Father of Surgery.' He authored the Sushruta Samhita, a seminal text on surgery, which details various surgical techniques and instruments." >Susruta</li>
+            <li onclick="describe(this)" data-name="Bhaskrcharya" data-descr="Bhaskaracharya, also known as Bhaskara II, was an Indian mathematician and astronomer. He is renowned for his works 'Lilavati' and 'Bijaganita,' and for making significant advances in algebra, arithmetic, and calculus." >Bhaskaracharya</li>
+
+        </ul>
+    </div>
+
+    <div class="Container">
+        <h1>Favourite Person Description</h1>
+        <h3 id="name1"></h3>
+        <p id="description"></p>
+    </div>
+    
+</body>
+</html>
