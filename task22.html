@@ -43,17 +43,20 @@
             color: #B22222;
             margin-bottom: 15px;
             border-bottom: 2px solid #FF1493;
-            display: inline-block;
+            display:inline-block;
             padding-bottom: 5px;
+            justify-content: center;
         }
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: left;
-            display: inline-block;
+            text-align: center;
+            display: flex;
             font-size: 1.2rem;
             line-height: 2;
+            flex-direction: column;
+            align-items: center;
         }
         ul li {
             padding-left: 30px;
@@ -92,7 +95,7 @@
         <ul>
             <li>Date: September 10, 2024</li>
             <li>Time: 6:00 PM - 10:00 PM</li>
-            <li>Location: 123 Celebration Avenue, Party Town</li>
+            <li>Location: Taj Tirupati</li>
             <li>Dress Code: Casual & Fun</li>
         </ul>
         <p>We hope to see you there and celebrate this joyous occasion together!</p>
@@ -114,7 +117,7 @@
             }, 5000);
         };
         start();
-        stop();
+        // stop();
     </script>
 </body>
 </html>
