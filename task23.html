@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: linear-gradient(to right, #83a4d4, #b6fbff);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .current-weather, .forecast {
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .current-weather:hover, .forecast:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        #location {
+            font-size: 2rem;
+            color: #e67e22;
+        }
+        .current-weather p, .forecast p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #34495e;
+        }
+        .current-weather i, .forecast i {
+            color: #e67e22;
+            margin-right: 10px;
+        }
+        .forecast {
+            text-align: left;
+        }
+        .forecast h3 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+        .forecast-day {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .forecast-day p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .forecast-day strong {
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <h2>Current Weather</h2>
+        <div class="current-weather">
+            <p><i class="fa-solid fa-location-crosshairs"></i> <strong id="location">Tirupati</strong></p>
+            <p><strong>Summary:</strong> Overcast</p>
+            <p><i class="fa-solid fa-temperature-three-quarters"></i> 29 °C</p>
+            <p><i class="fa-solid fa-temperature-low"></i> Feels Like: 31 °C</p>
+            <p><i class="fa-solid fa-wind"></i> 35 kts SW</p>
+        </div>
+
+        <div class="forecast">
+            <h3>5-Day Weather Forecast</h3>
+            <div class="forecast-day">
+                <p><strong>Monday:</strong> Sunny, 30 °C / 20 °C</p>
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="forecast-day">
+                <p><strong>Tuesday:</strong> Partly Cloudy, 28 °C / 19 °C</p>
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="forecast-day">
+                <p><strong>Wednesday:</strong> Rainy, 25 °C / 18 °C</p>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="forecast-day">
+                <p><strong>Thursday:</strong> Thunderstorms, 26 °C / 19 °C</p>
+                <i class="fa-solid fa-poo-storm"></i>
+            </div>
+            <div class="forecast-day">
+                <p><strong>Friday:</strong> Cloudy, 27 °C / 20 °C</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
